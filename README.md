@@ -1,6 +1,13 @@
 # semeval2023-afrisenti
 A low-resource sentiment analysis project for African Languages
 
+### Getting started
+1. Clone the repo and `cd` to project directory
+2. Install python -- version 3.8
+2. Run the command `python -m venv .venv` to setup the virtual environment
+3. Activate the virtual environment using `source .venv/bin/activate` 
+4. Install the requirements `pip install -r requirements.txt`
+
 Project Organization
 ------------
 
