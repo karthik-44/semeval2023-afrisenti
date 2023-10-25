@@ -107,7 +107,7 @@ Dataset
 ## Exploratory Data Analysis
 
 
-![alt text](./images/.png)  
+![alt text](./images/tweet_dist.png)  
 
 
 
@@ -119,7 +119,7 @@ This was the best google translate worked for the provided data.
 
 
 
-![alt text](./images/.png)  
+![alt text](./images/class_dist.png)  
 
 
 
@@ -130,14 +130,14 @@ been represented as per the color legend. The three languages (AM, DZ and MA) ha
 scripture. We observe a high overall weightage of neutral words.
 
 
-![alt text](./images/.png)  
+![alt text](./images/wc1.png)  
 
 
 
 The word clouds for translated text have also been shown below for better interpretation.
 
 
-![alt text](./images/.png)  
+![alt text](./images/ex2.png)  
 
 
 
@@ -147,7 +147,7 @@ highly used in the corpus.
 
 
 
-![alt text](./images/.png)  
+![alt text](./images/preproc.png)  
 
 
 
@@ -179,7 +179,7 @@ shows the comparison between the pcm language and its English translation.
 
 
 
-![alt text](./images/.png)  
+![alt text](./images/l1_sample.png)  
 
 
 
@@ -218,7 +218,7 @@ section.
 
 
 
-![alt text](./images/.png)  
+![alt text](./images/l1_results.png)  
 
 
 
@@ -261,7 +261,7 @@ The detailed results of all the models can be seen in the figure below.
 
 
 
-![alt text](./images/.png)  
+![alt text](./images/l2_results.png)  
 
 
 
@@ -274,12 +274,12 @@ we decided to check if the Amharic text sentiment relates to the length of the t
 of text length for each label.
 
 
-![alt text](./images/.png)  
+![alt text](./images/l3_textlen.png)  
 
 
 
 
-![alt text](./images/.png)  
+![alt text](./images/l3_wc.png)  
 
 
 
@@ -318,7 +318,7 @@ sequences of characters.
 embeddings depending on its contextual use.
 
 
-![alt text](./images/.png)  
+![alt text](./images/l3_results.png)  
 
 
 
@@ -413,7 +413,7 @@ performer of all and returns even poorer results than the Baseline models.
 The detailed results of all the models can be seen in the table below.
 
 
-![alt text](./images/.png)  
+![alt text](./images/l4_results.png)  
 
 
 
@@ -461,7 +461,7 @@ the dataset as a result the F1 score is 0.22 for both and recall value of 1 for 
 results are poorer than the baseline models.
 
 
-![alt text](./images/.png)  
+![alt text](./images/l5_results.png)  
 
 
 
@@ -518,7 +518,7 @@ models could be due to the availability of very less data. The complete result o
 in the figure below.
 
 
-![alt text](./images/.png)  
+![alt text](./images/l6_results.png)  
 
 
 
@@ -544,7 +544,7 @@ aggregation of four Nigerian language datasets obtained from NaijaSenti dataset.
 on our dataset performed very well with a F1 score of 0.93.
 
 
-![alt text](./images/.png)  
+![alt text](./images/l7_results.png)  
 
 
 ## Conclusion
