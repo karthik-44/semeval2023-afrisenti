@@ -164,7 +164,7 @@ distribution. F1 Score = 2 * (Recall * Precision) / (Recall + Precision)
 
 ## Individual Language Evaluation
 ## Language 1: Naija (pcm)
-Approach and Analysis
+### Approach and Analysis
 Naija or Nigerian Pidgin is an English-based language that is used in Nigeria for communication
 between multiple ethnic groups that do not share a common language. Although it has not been granted
 an official status in Nigeria, it is one of the biggest languages in Africa in terms of the population that
@@ -219,7 +219,7 @@ section.
 
 
 ## Language 2: Igbo (ig)
-Approach, Dataset, Igbo language and Algorithm:
+### Approach, Dataset, Igbo language and Algorithm:
 The train set has been chosen instead of dev set, because it has labels/classes.
 Observations of the Igbo dataset: Fig1 is an image of the test subset from the splitted-train-dev-test
 folder. You can see that the reviews are short, and contain capital letters, punctuations, hashtags, urls
@@ -264,7 +264,7 @@ The detailed results of all the models can be seen in the figure below.
 
 
 ## Language 3: Amharic (am)
-Approach
+### Approach
 In general if someone wants to express negative sentiment they do mention it in many sentences. So,
 we decided to check if the Amharic text sentiment relates to the length of the text. We created a boxplot
 of text length for each label.
@@ -353,7 +353,7 @@ string embeddings gave better results with accuracy of 0.687 and f1-score of 0.6
 
 
 ## Language 4: Hausa (ha)
-Approach
+### Approach
 Preprocessing:
 Performed step by step cleaning of data for both raw African text data as well as translated English text
 as per the preprocessing steps defined in above. Along with that the top N words were evaluated
@@ -414,7 +414,7 @@ The detailed results of all the models can be seen in the table below.
 
 
 ## Language 5: Algerian Arabic (dz)
-Approach
+### Approach
 Baseline Models:
 Linear Support Vector Classifier (SVC) - It is an algorithm that attempts to find a hyperplane to
 maximize the distance between classified samples. It has more flexibility in the choice of
@@ -462,7 +462,7 @@ results are poorer than the baseline models.
 
 
 ## Language 6: Mozambican Portuguese (pt)
-Approach
+### Approach
 The dataset used for the analysis is not very big and has 2 features – text and label. The data was split
 into train, dev and test set. The data did not have any missing values.
 Class Imbalance - This dataset had class imbalance. The neutral class was dominant and was almost
@@ -519,7 +519,7 @@ in the figure below.
 
 
 ## Language 7: Yoruba (yo)
-Approach
+### Approach
 For this language, the dataset when labeled with sentiment classes consists of twice the number of
 positive classes than that of negative class labels whereas the neutral class was slightly less than the
 positive class. For preprocessing we used label encoding of classes, tokenization,stemming and count
