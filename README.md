@@ -232,7 +232,7 @@ between, like in line 47 “okwukwe!!!!!!”, which will be recognized as a diff
 the word “okwukwe” is a sentiment lexicon and it is not recognized due to punctuations, this may
 misclassify reviews.
 
-### Results and ### Analysis:
+### Results and Analysis:
 Surprisingly, the performance of the Davlan/naija-twitter-sentiment-afriberta-large model on the Igbo
 train dataset is better than that for Igbo on the HuggingFace Naija website. It performed best among the
 models I tried because it is trained on languages including the Igbo language.
@@ -246,12 +246,7 @@ experiment performs badly, maybe because my regex is not that right. The lexicon
 perform as good as the Davlan/naija-twitter-sentiment-afriberta-large model, maybe because the reviews
 contain fewer sentiment bearing words due to their lengths and also because both good and bad
 reviews contain positive and negative sentiment lexicons.
-The afro-xlmr-mini and other models performed okay. The reasons are unknown.
-In the future, I want to try the emotion lexicons provided in this github
-https://github.com/hausanlp/NaijaSenti. I expect this will improve performance because we now have
-more sentiment bearing words.
-***For more details regarding how to run code, location of datasets etc, please visit here. Also access
-images discussed below here.***
+The afro-xlmr-mini and other models performed okay. 
 The detailed results of all the models can be seen in the figure below.
 
 
