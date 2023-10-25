@@ -96,12 +96,10 @@ in between African languages)
 
 ## Dataset
 Tweets in 9 African languages
-Labeled with 3 sentiment classes (positive, negative, neutral)
-Annotated by three annotators following the annotation guidelines in (Mohammad, Saif M, 2016)
-Source: AfriSenti-SemEval: Sentiment Analysis for Low-resource African Languages using Twitter
+- Labeled with 3 sentiment classes (positive, negative, neutral)
+- Annotated by three annotators following the annotation guidelines in (Mohammad, Saif M, 2016)
+- Source: AfriSenti-SemEval: Sentiment Analysis for Low-resource African Languages using Twitter
 Dataset
-
-
 
 
 ## Exploratory Data Analysis
@@ -122,8 +120,6 @@ This was the best google translate worked for the provided data.
 ![alt text](./images/class_dist.png)  
 
 
-
-
 WordClouds
 The word clouds for 9 African languages can be seen here. Top words from each class label has
 been represented as per the color legend. The three languages (AM, DZ and MA) have romanized
@@ -137,7 +133,7 @@ scripture. We observe a high overall weightage of neutral words.
 The word clouds for translated text have also been shown below for better interpretation.
 
 
-![alt text](./images/ex2.png)  
+![alt text](./images/wc2.png)  
 
 
 
@@ -179,7 +175,7 @@ shows the comparison between the pcm language and its English translation.
 
 
 
-![alt text](./images/l1_sample.png)  
+![alt text](./images/l1_samp.png)  
 
 
 
