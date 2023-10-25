@@ -120,7 +120,7 @@ This was the best google translate worked for the provided data.
 ![alt text](./images/class_dist.png)  
 
 
-WordClouds
+### WordClouds
 The word clouds for 9 African languages can be seen here. Top words from each class label has
 been represented as per the color legend. The three languages (AM, DZ and MA) have romanized
 scripture. We observe a high overall weightage of neutral words.
@@ -160,6 +160,10 @@ observations in actual class
 both false positives and false negatives into account. Intuitively it is not as easy to understand as
 accuracy, but F1 is usually more useful than accuracy, especially if you have an uneven class
 distribution. F1 Score = 2 * (Recall * Precision) / (Recall + Precision)
+- F1 weighted - The weighted F1 Score calculates the F1 Score for each class in a multi-class classification problem and then takes a weighted average of these scores. The weight is typically based on the number of instances in each class.
+- F1 macro - The F1 Macro is a simple way to calculate the F1 Score for each class and then take the unweighted average (arithmetic mean) of these individual F1 Scores. This means that each class contributes equally to the final F1 Macro score.
+
+  
 
 
 ## Individual Language Evaluation
