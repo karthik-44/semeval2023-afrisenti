@@ -1,65 +1,7 @@
 # semeval2023-afrisenti
 A low-resource sentiment analysis project for African Languages
 
-### Getting started
-1. Clone the repo and `cd` to project directory
-2. Install python -- version 3.8
-2. Run the command `python -m venv .venv` to setup the virtual environment
-3. Activate the virtual environment using `source .venv/bin/activate` 
-4. Install the requirements `pip install -r requirements.txt`
 
-Project Organization
-------------
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
-
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
 
 
 ## Introduction
@@ -296,7 +238,9 @@ We checked the following model strategies as baselines for Amharic:
 classification. TF-IDF representations of the words are considered as features.
 - Multinomial Naive Bayes: uses the bayes theorem for classification and considers the
 features(token counts) are independent of each other.
-**Deep Learning models**
+
+**Deep Learning models**  
+
 We have used variations of the RoBERTa models for sentiment classification.
 xlm-roberta-base-finetuned-amharic is a Amharic RoBERTa model obtained by fine-tuning
 xlm-roberta-base model on Amharic language texts. It provides better performance than the
@@ -470,12 +414,12 @@ For this project, TF-IDF text vectorizer was used to represent the text as a num
 500 features were selected using TF-IDF vectorizer. After converting the text data to numeric form, the
 data was standardized and modeling was performed for prediction. The analysis was done by comparing
 the performances of baseline models, machine learning models and deep learning models.
-Baseline models
+**Baseline models**  
 Linear SVM(with C=0.2) – the linear SVM model was implemented with C value of 0.2. This model gave
 a macro F1 score of 0.52 and accuracy of 0.61
 Multinomial Naive Bayes – this model was implemented and it gave a macro F1 score of 0.56 and
-accuracy of 0.61.
-Machine Learning Models
+accuracy of 0.61.  
+**Machine Learning Models**  
 Random Forest - One of the hyperparameters n_estimators which is the number of trees in the forest is
 5 in this analysis. All other parameters were set to default values. The training accuracy for the train set
 was 0.92 and the test accuracy was 0.39. This model gave a macro F1 score of 0.34 and accuracy of
@@ -488,8 +432,8 @@ test accuracy was 0.32. This model gave a macro F1 score of 0.30 and accuracy of
 Multinomial Logistic Regression - classification technique that extends the logistic regression
 algorithm to solve multiclass possible outcome problems, given one or more independent variables. The
 training accuracy obtained was 0.85 and the test accuracy was 0.34. This model gave a macro F1 score
-of 0.34 and accuracy of 0.35.
-Deep Learning Models
+of 0.34 and accuracy of 0.35.  
+**Deep Learning Models**  
 Davlan/AfroXLMR- large - AfroXLMR-large was created by MLM adaptation of the XLMR-large model
 on 17 African languages. This model gave a macro F1 score of 0.34 and accuracy of 0.44.
 Davlan/AfroXLMR- small - AfroXLMR-small was created by first reducing the vocabulary token size
@@ -498,7 +442,7 @@ macro F1 score of 0.30 and accuracy of 0.42.
 Davlan/Naija – It is the first multilingual model based on a fine tuned castorini/afriberta_large model.
 The model has been trained to classify tweets into 3 sentiment classes: negative, neutral and positive.
 This model gave a macro F1 score of 0.26 and accuracy of 0.50.
-Results
+### Results
 In the Mozambican Portuguese language, the neutral class was dominant and almost double that of the
 Positive and Negative classes. Hence the Macro Average F1 is used as the evaluation metric. Of all the
 models that were implemented, the baseline models performed better than the Machine Learning
@@ -552,3 +496,73 @@ pre-trained specifically for the Algerian Dialect showed better performance
 models.
 - We achieved better performance than the ones provided in the Afrisenti Semeval competition for
 this task for all the languages we worked on.
+
+### Getting started
+1. Clone the repo and `cd` to project directory
+2. Install python -- version 3.8
+2. Run the command `python -m venv .venv` to setup the virtual environment
+3. Activate the virtual environment using `source .venv/bin/activate` 
+4. Install the requirements `pip install -r requirements.txt`
+
+Project Organization
+------------
+
+    ├── LICENSE
+    ├── Makefile           <- Makefile with commands like `make data` or `make train`
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modeling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    │
+    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    │
+    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │                         the creator's initials, and a short `-` delimited description, e.g.
+    │                         `1.0-jqp-initial-data-exploration`.
+    │
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
+    │
+    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── src                <- Source code for use in this project.
+    │   ├── __init__.py    <- Makes src a Python module
+    │   │
+    │   ├── data           <- Scripts to download or generate data
+    │   │   └── make_dataset.py
+    │   │
+    │   ├── features       <- Scripts to turn raw data into features for modeling
+    │   │   └── build_features.py
+    │   │
+    │   ├── models         <- Scripts to train models and then use trained models to make
+    │   │   │                 predictions
+    │   │   ├── predict_model.py
+    │   │   └── train_model.py
+    │   │
+    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │       └── visualize.py
+    │
+    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+
+
+--------
+
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>  
+
+I would like to thank the below members who worked with me during this project and for the individual language model evaluation and analysis:  
+- Naija (PCM) - Aayush
+- Igbo (IG) - Ga Nan
+- Amharic (AM) - Venkata Kanna
+- Hausa (HA) - Aisha 
+- Algerian Arabic (DZ) - Ved
+- Mozambican Portuguese (PT) - Pooja
+- Yoruba (YO) - Shefali
+
