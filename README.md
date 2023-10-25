@@ -102,7 +102,7 @@ Tweets in 9 African languages
 Dataset
 
 
-## Exploratory Data ### Analysis
+## Exploratory Data Analysis
 
 
 ![alt text](./images/tweet_dist.png)  
@@ -168,7 +168,7 @@ distribution. F1 Score = 2 * (Recall * Precision) / (Recall + Precision)
 
 ## Individual Language Evaluation
 ## Language 1: Naija (pcm)
-### Approach and ### Analysis
+### Approach and Analysis
 Naija or Nigerian Pidgin is an English-based language that is used in Nigeria for communication
 between multiple ethnic groups that do not share a common language. Although it has not been granted
 an official status in Nigeria, it is one of the biggest languages in Africa in terms of the population that
@@ -275,26 +275,28 @@ of text length for each label.
 
 
 
-- Under-Sampling: The examples from the class with minimum size are kept and extra examples
+- **Under-Sampling**: The examples from the class with minimum size are kept and extra examples
 from the majority classes are removed. (Can choose at random)
-- Over-Sampling: The examples from the class with maximum size are kept and the examples
+- **Over-Sampling**: The examples from the class with maximum size are kept and the examples
 from the minority classes are increased to that number. (sampling with replace=True). But this
 results in producing duplicate data. (The model performance is not good). Another technique
 called SMOTE didn't work with raw text.
-Under Sampling
+**Under Sampling**
 As we had more samples in the neutral, negative classes, we did sampling without replacement from
 them to match the positive class. But used a specific random_state(1) for reproducibility of the results.
-Baseline models
-We checked the following model strategies as baselines for Amharic:
+
+**Baseline models**
+We checked the following model strategies as baselines for Amharic:  
 - Stratified: Generates predictions based on the training set's class distribution.
 - Uniform: Generates predictions uniformly at random.
 - Most frequent: Always predicts the most frequent label in the training set.
-Machine Learning models
+
+**Machine Learning models**  
 - Linear Support Vector Classifier (SVC): applies a linear kernel function to perform
 classification. TF-IDF representations of the words are considered as features.
 - Multinomial Naive Bayes: uses the bayes theorem for classification and considers the
 features(token counts) are independent of each other.
-Deep Learning models
+**Deep Learning models**
 We have used variations of the RoBERTa models for sentiment classification.
 xlm-roberta-base-finetuned-amharic is a Amharic RoBERTa model obtained by fine-tuning
 xlm-roberta-base model on Amharic language texts. It provides better performance than the
