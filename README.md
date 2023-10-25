@@ -82,7 +82,7 @@ is stronger.
 
 
 ## Problem Statement
-Given training data in a target language, perform Sentiment Analysis in a low resource setting and
+Given training data in a target language, perform Sentiment ### Analysis in a low resource setting and
 improve the prediction capabilities from existing baselines.
 Challenges associated to low resource language projects include:
 - Low availability of dataset
@@ -98,11 +98,11 @@ in between African languages)
 Tweets in 9 African languages
 - Labeled with 3 sentiment classes (positive, negative, neutral)
 - Annotated by three annotators following the annotation guidelines in (Mohammad, Saif M, 2016)
-- Source: AfriSenti-SemEval: Sentiment Analysis for Low-resource African Languages using Twitter
+- Source: AfriSenti-SemEval: Sentiment ### Analysis for Low-resource African Languages using Twitter
 Dataset
 
 
-## Exploratory Data Analysis
+## Exploratory Data ### Analysis
 
 
 ![alt text](./images/tweet_dist.png)  
@@ -168,7 +168,7 @@ distribution. F1 Score = 2 * (Recall * Precision) / (Recall + Precision)
 
 ## Individual Language Evaluation
 ## Language 1: Naija (pcm)
-### Approach and Analysis
+### Approach and ### Analysis
 Naija or Nigerian Pidgin is an English-based language that is used in Nigeria for communication
 between multiple ethnic groups that do not share a common language. Although it has not been granted
 an official status in Nigeria, it is one of the biggest languages in Africa in terms of the population that
@@ -223,7 +223,7 @@ section.
 
 
 ## Language 2: Igbo (ig)
-### Approach, Dataset, Igbo language and Algorithm:
+### Approach:
 The train set has been chosen instead of dev set, because it has labels/classes.
 Observations of the Igbo dataset: Fig1 is an image of the test subset from the splitted-train-dev-test
 folder. You can see that the reviews are short, and contain capital letters, punctuations, hashtags, urls
@@ -231,13 +231,8 @@ and emojis. You can also see that some punctuations are tightly attached to word
 between, like in line 47 “okwukwe!!!!!!”, which will be recognized as a different word than “okwukwe”. If
 the word “okwukwe” is a sentiment lexicon and it is not recognized due to punctuations, this may
 misclassify reviews.
-Observations of lexicons: the lexicons contain \u200d and whitespace-like characters, as shown in the
-images below (Fig2, Fig3). In the predict_by_lexica() method, I added whitespaces before and after
-each lexicon to avoid some words that contain the lexicon but not the lexicon itself.
-About Igbo language: Fig4 shows the Igbo alphabets, as you can see, they have some “punctuations”
-on top or below. When removing punctuations, these will not be filtered.
-I used the algorithm from page 15 of chapter 20 from our textbook.
-Results and Analysis:
+
+### Results and ### Analysis:
 Surprisingly, the performance of the Davlan/naija-twitter-sentiment-afriberta-large model on the Igbo
 train dataset is better than that for Igbo on the HuggingFace Naija website. It performed best among the
 models I tried because it is trained on languages including the Igbo language.
@@ -322,7 +317,7 @@ embeddings depending on its contextual use.
 
 
 
-Analysis
+### Analysis
 As the neutral class was dominating the positive and negative classes, just predicting the neutral class
 gave the accuracy of 0.523, but the f1-score was 0.229 which suggests that we can’t just use accuracy
 while selecting the model.
@@ -388,7 +383,7 @@ Davlan/xlm-roberta-base-finetuned-hausa – a Hausa RoBERTa model obtained by fi
 xlm-roberta-base model on Hausa language texts. It provides better performance than the
 XLM-RoBERTa on text classification and named entity recognition datasets. This model is a
 xlm-roberta-base model that was specifically fine-tuned on Hausa corpus.
-Analysis
+### Analysis
 The Hausa language has the largest data size among other languages in our dataset as seen in the
 class distribution part of the exploratory data analysis section above.
 The Neutral class was slightly dominant than the Positive and Negative classes but overall the data did
@@ -442,7 +437,7 @@ Next Sentence Prediction objective.
 alger-ia/dziribert– DziriBERT is a BERT-like model for the Algerian dialect. It has been
 pre-trained on oneMillion Algerian tweets and has been evaluated on sentiment, emotion and
 topic classification datasets.
-Analysis
+### Analysis
 The analysis was done by comparing the performances of baseline models and deep learning models.
 The Baseline models used are Linear SVM and Multinomial Naïve Bayes. The Deep Learning Models
 used are AfroXLMR-mini, SI2M-Lab/DarijaBERT, Kamel/DarijaBERT and alger-ia/dziribert. In this
@@ -473,7 +468,7 @@ Class Imbalance - This dataset had class imbalance. The neutral class was domina
 double that of the positive and negative classes. To deal with this problem, downsampling was
 performed on the majority class and the analysis was performed on the balanced data set. The plot of
 the distribution of classes before and after downsampling is shown below.
-Analysis
+### Analysis
 For this project, TF-IDF text vectorizer was used to represent the text as a numerical feature. The top
 500 features were selected using TF-IDF vectorizer. After converting the text data to numeric form, the
 data was standardized and modeling was performed for prediction. The analysis was done by comparing
