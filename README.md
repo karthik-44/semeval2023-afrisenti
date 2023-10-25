@@ -501,7 +501,6 @@ this task for all the languages we worked on.
 I would like to thank the below members who worked with me during this project and for the individual language model evaluation and analysis:  
 - Naija (PCM) - Aayush
 - Igbo (IG) - Ga Nan
-- Amharic (AM) - Venkata Kanna
 - Hausa (HA) - Aisha 
 - Algerian Arabic (DZ) - Ved
 - Mozambican Portuguese (PT) - Pooja
