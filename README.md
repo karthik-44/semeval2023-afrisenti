@@ -513,7 +513,7 @@ in the figure below.
 
 
 ## Language 7: Yoruba (yo)
-### Approach
+### Approach and Analysis
 For this language, the dataset when labeled with sentiment classes consists of twice the number of
 positive classes than that of negative class labels whereas the neutral class was slightly less than the
 positive class. For preprocessing we used label encoding of classes, tokenization,stemming and count
