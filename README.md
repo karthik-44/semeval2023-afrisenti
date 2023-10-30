@@ -40,7 +40,7 @@ in between African languages)
 Tweets in 9 African languages
 - Labeled with 3 sentiment classes (positive, negative, neutral)
 - Annotated by three annotators following the annotation guidelines in (Mohammad, Saif M, 2016)
-- Source: AfriSenti-SemEval: Sentiment ### Analysis for Low-resource African Languages using Twitter
+- Source: AfriSenti-SemEval: Sentiment Analysis for Low-resource African Languages using Twitter
 Dataset
 
 
